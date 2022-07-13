@@ -1,13 +1,71 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.poll_container {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  min-width: 290px;
+  min-height: 150px;
+  padding: 0 25px;
+  margin: 32px;
+  color: #2f3032;
+  border: 2px solid #303133;
+  box-shadow: 2px 2px 12px 0 rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.poll_container > * {
+  text-align: left;
+}
+
+.poll_question {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.poll_answer_default,
+.poll_voted_answer,
+.poll_unvoted_answer {
+  position: relative;
+  font-size: 17px;
+  border: 2px solid #faa523;
+  padding: 8px;
+  width: 100%;
+  margin: 8px 0;
+  background-color: #fff;
+  color: #2f3032;
+  background-color: transparent;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.poll_unvoted_answer {
+  border-color: #d3d3d3;
+}
+
+.poll_answer_default:hover {
+  color: #fff;
+  background-color: #faa523;
+}
+
+.poll_answer_default:disabled {
+  background-color: transparent;
+  color: #2f3032;
+}
+
+.poll_answer_progress {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  color: #fff;
+  z-index: -1;
+}
+
+.poll_container,
+.poll_voted_answer,
+.poll_answer_default,
+.poll_unvoted_answer {
+  border-radius: 10px;
 }
