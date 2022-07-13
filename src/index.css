@@ -12,6 +12,7 @@
   position: fixed;
   bottom: 0;
   right: 0;
+  background-color: #fff;
 }
 
 .poll_container > * {
@@ -25,7 +26,8 @@
 
 .poll_answer_default,
 .poll_voted_answer,
-.poll_unvoted_answer {
+.poll_unvoted_answer,
+.poll_next_question {
   position: relative;
   font-size: 17px;
   border: 2px solid #faa523;
@@ -37,6 +39,7 @@
   background-color: transparent;
   white-space: nowrap;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .poll_unvoted_answer {
@@ -66,6 +69,22 @@
 .poll_container,
 .poll_voted_answer,
 .poll_answer_default,
-.poll_unvoted_answer {
+.poll_unvoted_answer,
+.poll_next_question {
   border-radius: 10px;
+}
+
+.poll_footer {
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+}
+
+.vote_count {
+  margin-right: 16px;
+}
+
+.poll_next_question {
+  width: auto;
+  background-color: #faa523;
 }
