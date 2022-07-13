@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const setNewPollData = (pollDataRaw) =>
-  pollDataRaw.map(({ question, answersRaw }, index) => {
+  pollDataRaw.map(({ question, answersRaw }) => {
     const savedData = JSON.parse(localStorage.getItem(question));
 
     if (savedData) return savedData;

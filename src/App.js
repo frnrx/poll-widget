@@ -22,6 +22,8 @@ const App = ({ domElement }) => {
 
   getPollData();
 
+  if (!pollDataRaw) return null;
+
   return <Poll pollDataRaw={pollDataRaw} />;
 };
 
