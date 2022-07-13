@@ -22,7 +22,7 @@ const App = ({ domElement }) => {
 
   getPollData();
 
-  if (!pollDataRaw) return null;
+  if (!pollDataRaw.length) return null;
 
   return <Poll pollDataRaw={pollDataRaw} />;
 };
