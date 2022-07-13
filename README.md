@@ -1,9 +1,10 @@
 This is a simple Poll built in React that allows a user to vote one time per refresh and stores the votes in localStorage.
 
 ## To run the app
-
-`yarn`
-`yarn start`
+```
+yarn
+yarn start
+```
 
 ## To run the tests
 
