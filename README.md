@@ -1,9 +1,10 @@
-This is a simple Poll built in React that allows a user to vote one time per refresh and stores the votes in localStorage.
+This is a poll widget built in React that can be easily embeded in any HTML file.
 
 ## To run the app
-
-`yarn`
-`yarn start`
+```
+yarn
+yarn start
+```
 
 ## To run the tests
 
@@ -22,6 +23,6 @@ _Attention_: The answers should be divided by the separator `|`, with no space i
 
 ## Technical summary
 
-For this project I decided focus on the implementation of the features keeping it as simple as possible by using only React ready features. For this, I used ReactJS, vanilla CSS and react-testing-library. I considered using `react'leaf-polls` as the foundation for the poll, but I figured I could build all the features myself for the sake of the assessment.
+For this project, the focus on the implementation of the features was keeping it as simple as possible by using only React ready features. For this, the tools used were ReactJS, vanilla CSS, react-testing-library and localStorage.
 
-For improvements, I would add a Javascript-CSS library (styled-components, emotion, etc) to avoid doing inline-style logic and keep the styles more readable. I would also test more cases of the localStorage management through the functions `handleVote` and `setNewPollData` and test the CSS changes that happen through user interactions.
+For improvements, it would be nice to add a Javascript-CSS library (styled-components, emotion, etc) to avoid doing inline-style logics and to keep the styles more readable. It would also be good to test more cases of the localStorage management through the functions `handleVote` and `setNewPollData` and test the CSS changes that happen through user interactions.
